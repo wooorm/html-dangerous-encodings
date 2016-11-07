@@ -10,8 +10,8 @@
     "encoding"
   ],
   "dependencies": {},
+  "main": "index.json",
   "files": [
-    "index.js",
     "index.json"
   ],
   "repository": {
@@ -34,7 +34,7 @@
   },
   "scripts": {
     "build-md": "remark . --quiet --frail --output",
-    "build-bundle": "browserify index.js --bare -s htmlDangerousEncodings > html-dangerous-encodings.js",
+    "build-bundle": "browserify index.json --bare -s htmlDangerousEncodings > html-dangerous-encodings.js",
     "build-mangle": "esmangle html-dangerous-encodings.js > html-dangerous-encodings.min.js",
     "build": "npm run build-md && npm run build-bundle && npm run build-mangle",
     "lint": "xo",
