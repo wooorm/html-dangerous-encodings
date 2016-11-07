@@ -9,20 +9,17 @@
     "character",
     "encoding"
   ],
-  "dependencies": {},
-  "main": "index.json",
-  "files": [
-    "index.json"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wooorm/html-dangerous-encodings.git"
-  },
+  "repository": "https://github.com/wooorm/html-dangerous-encodings",
   "bugs": "https://github.com/wooorm/html-dangerous-encodings/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
   ],
+  "main": "index.json",
+  "files": [
+    "index.json"
+  ],
+  "dependencies": {},
   "devDependencies": {
     "browserify": "^13.0.0",
     "esmangle": "^1.0.1",
