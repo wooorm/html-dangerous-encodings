@@ -1,39 +1,25 @@
-/**
- * @author Titus Wormer
- * @copyright 2016 Titus Wormer
- * @license MIT
- * @module html-dangerous-encodings
- * @fileoverview Test suite for `html-dangerous-encodings`.
- */
-
 'use strict';
 
-/* eslint-env node */
-
-/*
- * Module dependencies.
- */
-
+/* Dependencies. */
+var assert = require('assert');
 var test = require('tape');
-var htmlDangerousEncodings = require('./index.js');
+var htmlDangerousEncodings = require('./');
 
-/*
- * Tests.
- */
-
+/* Tests. */
 test('htmlDangerousEncodings', function (t) {
-    t.ok(
-        Array.isArray(htmlDangerousEncodings),
-        'should be an `array`'
-    );
+  t.ok(
+    Array.isArray(htmlDangerousEncodings),
+    'should be an `array`'
+  );
 
-    htmlDangerousEncodings.forEach(function (encoding) {
-        t.equal(
-            typeof encoding,
-            'string',
-            '`' + encoding + '` should be a string'
-        );
-    });
+  t.doesNotThrow(
+    function () {
+      htmlDangerousEncodings.forEach(function (encoding) {
+        assert(typeof encoding, 'string', '`' + encoding + '`');
+      });
+    },
+    'should be all `string`s'
+  );
 
-    t.end();
+  t.end();
 });

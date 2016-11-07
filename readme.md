@@ -16,8 +16,6 @@ module, [uncompressed and compressed][releases].
 
 ## Usage
 
-Dependencies:
-
 ```javascript
 var htmlDangerousEncodings = require('html-dangerous-encodings');
 ```
