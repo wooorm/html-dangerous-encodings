@@ -27,17 +27,13 @@
     "browserify": "^13.0.0",
     "esmangle": "^1.0.1",
     "istanbul": "^0.4.0",
-    "remark": "^4.0.0",
-    "remark-comment-config": "^3.0.0",
-    "remark-github": "^4.0.1",
-    "remark-lint": "^3.0.0",
-    "remark-usage": "^3.0.0",
-    "remark-validate-links": "^3.0.0",
+    "remark-cli": "^2.1.0",
+    "remark-preset-wooorm": "^1.0.0",
     "tape": "^4.4.0",
     "xo": "^0.17.0"
   },
   "scripts": {
-    "build-md": "remark . --quiet --frail",
+    "build-md": "remark . --quiet --frail --output",
     "build-bundle": "browserify index.js --bare -s htmlDangerousEncodings > html-dangerous-encodings.js",
     "build-mangle": "esmangle html-dangerous-encodings.js > html-dangerous-encodings.min.js",
     "build": "npm run build-md && npm run build-bundle && npm run build-mangle",
@@ -51,5 +47,8 @@
     "ignores": [
       "html-dangerous-encodings.js"
     ]
+  },
+  "remarkConfig": {
+    "presets": "wooorm"
   }
 }

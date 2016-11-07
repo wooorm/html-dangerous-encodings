@@ -11,9 +11,6 @@ encoding labels][encodings].
 npm install html-dangerous-encodings
 ```
 
-**html-dangerous-encodings** is also available as an AMD, CommonJS, and globals
-module, [uncompressed and compressed][releases].
-
 ## Usage
 
 ```javascript
@@ -55,8 +52,6 @@ Yields:
 [coverage-page]: https://codecov.io/github/wooorm/html-dangerous-encodings?branch=master
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[releases]: https://github.com/wooorm/html-dangerous-encodings/releases
 
 [license]: LICENSE
 
