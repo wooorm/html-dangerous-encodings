@@ -1,4 +1,4 @@
-# html-dangerous-encodings [![Build Status][build-badge]][build-page] [![Coverage Status][coverage-badge]][coverage-page]
+# html-dangerous-encodings [![Build Status][build-badge]][build-page]
 
 List of dangerous (security concerns, [1][], [2][]) HTML [character
 encoding labels][encodings].
@@ -46,10 +46,6 @@ Yields:
 [build-badge]: https://img.shields.io/travis/wooorm/html-dangerous-encodings.svg
 
 [build-page]: https://travis-ci.org/wooorm/html-dangerous-encodings
-
-[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/html-dangerous-encodings.svg
-
-[coverage-page]: https://codecov.io/github/wooorm/html-dangerous-encodings?branch=master
 
 [npm]: https://docs.npmjs.com/cli/install
 
