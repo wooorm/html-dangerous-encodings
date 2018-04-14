@@ -9,7 +9,7 @@
     "character",
     "encoding"
   ],
-  "repository": "https://github.com/wooorm/html-dangerous-encodings",
+  "repository": "wooorm/html-dangerous-encodings",
   "bugs": "https://github.com/wooorm/html-dangerous-encodings/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
