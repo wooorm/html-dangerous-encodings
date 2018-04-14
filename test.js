@@ -3,7 +3,7 @@
 /* Dependencies. */
 var assert = require('assert');
 var test = require('tape');
-var htmlDangerousEncodings = require('./');
+var htmlDangerousEncodings = require('.');
 
 /* Tests. */
 test('htmlDangerousEncodings', function (t) {
