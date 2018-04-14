@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-- '4.0'
-- '8.0'
+- lts/boron
+- node
 deploy:
   provider: releases
   api_key:
@@ -11,4 +11,4 @@ deploy:
     - "html-dangerous-encodings.min.js"
   on:
     tags: true
-    node: '8.0'
+    skip_cleanup: true
