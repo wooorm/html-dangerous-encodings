@@ -7,19 +7,13 @@ var htmlDangerousEncodings = require('.');
 
 /* Tests. */
 test('htmlDangerousEncodings', function (t) {
-  t.ok(
-    Array.isArray(htmlDangerousEncodings),
-    'should be an `array`'
-  );
+  t.ok(Array.isArray(htmlDangerousEncodings), 'should be an `array`');
 
-  t.doesNotThrow(
-    function () {
-      htmlDangerousEncodings.forEach(function (encoding) {
-        assert(typeof encoding, 'string', '`' + encoding + '`');
-      });
-    },
-    'should be all `string`s'
-  );
+  t.doesNotThrow(function () {
+    htmlDangerousEncodings.forEach(function (encoding) {
+      assert(typeof encoding, 'string', '`' + encoding + '`');
+    });
+  }, 'should be all `string`s');
 
   t.end();
 });

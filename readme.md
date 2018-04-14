@@ -14,9 +14,9 @@ npm install html-dangerous-encodings
 ## Usage
 
 ```javascript
-var htmlDangerousEncodings = require('html-dangerous-encodings');
+var htmlDangerousEncodings = require('html-dangerous-encodings')
 
-console.log(htmlDangerousEncodings);
+console.log(htmlDangerousEncodings)
 ```
 
 Yields:
