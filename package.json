@@ -1,6 +1,6 @@
 {
   "name": "html-dangerous-encodings",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "List of dangerous HTML character encoding labels",
   "license": "MIT",
   "keywords": [
