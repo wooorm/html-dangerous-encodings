@@ -1,7 +1,6 @@
 # html-dangerous-encodings
 
 [![Build][build-badge]][build]
-[![Coverage][coverage-badge]][coverage]
 [![Size][size-badge]][size]
 
 List of dangerous (security concerns, [1][], [2][]) HTML [character
@@ -52,10 +51,6 @@ Yields:
 [build-badge]: https://img.shields.io/travis/wooorm/html-dangerous-encodings.svg
 
 [build]: https://travis-ci.org/wooorm/html-dangerous-encodings
-
-[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/html-dangerous-encodings.svg
-
-[coverage]: https://codecov.io/github/wooorm/html-dangerous-encodings
 
 [size-badge]: https://img.shields.io/bundlephobia/minzip/html-dangerous-encodings.svg
 
