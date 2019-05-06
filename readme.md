@@ -53,7 +53,7 @@ Yields:
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
 
 [1]: https://developer.mozilla.org/en/docs/Web/HTML/Element/meta#attr-charset
 
