@@ -3,20 +3,20 @@
 [![Build][build-badge]][build]
 [![Size][size-badge]][size]
 
-List of dangerous (security concerns, [1][], [2][]) HTML [character
-encoding labels][encodings].
+List of dangerous (security concerns, [1][], [2][]) HTML [character encoding
+labels][encodings].
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install html-dangerous-encodings
 ```
 
-## Usage
+## Use
 
-```javascript
+```js
 var htmlDangerousEncodings = require('html-dangerous-encodings')
 
 console.log(htmlDangerousEncodings)
@@ -40,7 +40,7 @@ Yields:
 
 ### `htmlDangerousEncodings`
 
-`Array.<string>` — List of lower-case encoding labels.
+`Array.<string>` — List of lowercase encoding labels.
 
 ## License
 
