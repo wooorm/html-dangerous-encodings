@@ -48,9 +48,9 @@ Yields:
 
 <!-- Definition -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/html-dangerous-encodings.svg
+[build-badge]: https://github.com/wooorm/html-dangerous-encodings/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/html-dangerous-encodings
+[build]: https://github.com/wooorm/html-dangerous-encodings/actions
 
 [size-badge]: https://img.shields.io/bundlephobia/minzip/html-dangerous-encodings.svg
 
