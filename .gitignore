@@ -1,6 +1,5 @@
 .DS_Store
 *.log
+coverage/
 node_modules/
-html-dangerous-encodings.js
-html-dangerous-encodings.min.js
 yarn.lock

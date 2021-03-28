@@ -1,12 +1,16 @@
 # html-dangerous-encodings
 
 [![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
 [![Size][size-badge]][size]
 
 List of dangerous (security concerns, [1][], [2][]) HTML [character encoding
 labels][encodings].
 
 ## Install
+
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
 
 [npm][]:
 
@@ -17,7 +21,7 @@ npm install html-dangerous-encodings
 ## Use
 
 ```js
-var htmlDangerousEncodings = require('html-dangerous-encodings')
+import {htmlDangerousEncodings} from 'html-dangerous-encodings'
 
 console.log(htmlDangerousEncodings)
 ```
@@ -25,7 +29,8 @@ console.log(htmlDangerousEncodings)
 Yields:
 
 ```js
-[ 'hz-gb-2312',
+[
+  'hz-gb-2312',
   'csiso2022kr',
   'csiso2022jp',
   'iso-2022-jp',
@@ -33,10 +38,14 @@ Yields:
   'iso-2022-cn-ext',
   'iso-2022-kr',
   'utf-16be',
-  'utf-16le' ]
+  'utf-16le'
+]
 ```
 
 ## API
+
+This package exports the following identifiers: `htmlDangerousEncodings`.
+There is no default export.
 
 ### `htmlDangerousEncodings`
 
@@ -51,6 +60,10 @@ Yields:
 [build-badge]: https://github.com/wooorm/html-dangerous-encodings/workflows/main/badge.svg
 
 [build]: https://github.com/wooorm/html-dangerous-encodings/actions
+
+[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/html-dangerous-encodings.svg
+
+[coverage]: https://codecov.io/github/wooorm/html-dangerous-encodings
 
 [size-badge]: https://img.shields.io/bundlephobia/minzip/html-dangerous-encodings.svg
 
