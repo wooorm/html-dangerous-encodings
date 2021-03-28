@@ -9,7 +9,7 @@ test('htmlDangerousEncodings', function (t) {
     var index = -1
 
     while (++index < htmlDangerousEncodings.length) {
-      assert(
+      assert.equal(
         typeof htmlDangerousEncodings[index],
         'string',
         '`' + htmlDangerousEncodings[index] + '`'
