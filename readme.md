@@ -4,18 +4,54 @@
 [![Coverage][coverage-badge]][coverage]
 [![Size][size-badge]][size]
 
-List of dangerous (security concerns, [1][], [2][]) HTML [character encoding
-labels][encodings].
+List of dangerous HTML character encoding labels.
+
+## Contents
+
+*   [What is this?](#what-is-this)
+*   [When should I use this?](#when-should-i-use-this)
+*   [Install](#install)
+*   [Use](#use)
+*   [API](#api)
+    *   [`htmlDangerousEncodings`](#htmldangerousencodings)
+*   [Types](#types)
+*   [Compatibility](#compatibility)
+*   [Security](#security)
+*   [Related](#related)
+*   [Contribute](#contribute)
+*   [License](#license)
+
+## What is this?
+
+This is a list of character encodings that are dangerous according to the
+[spec][].
+
+## When should I use this?
+
+Probably never!
+Maybe when building an HTML linter.
 
 ## Install
 
-This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
-instead of `require`d.
-
-[npm][]:
+This package is [ESM only][esm].
+In Node.js (version 12.20+, 14.14+, or 16.0+), install with [npm][]:
 
 ```sh
 npm install html-dangerous-encodings
+```
+
+In Deno with [Skypack][]:
+
+```js
+import {htmlDangerousEncodings} from 'https://cdn.skypack.dev/html-dangerous-encodings@2?dts'
+```
+
+In browsers with [Skypack][]:
+
+```html
+<script type="module">
+  import {htmlDangerousEncodings} from 'https://cdn.skypack.dev/html-dangerous-encodings@2?min'
+</script>
 ```
 
 ## Use
@@ -49,7 +85,31 @@ There is no default export.
 
 ### `htmlDangerousEncodings`
 
-`Array.<string>` — List of lowercase encoding labels.
+List of dangerous HTML character encoding labels (`Array<string>`)
+
+## Types
+
+This package is fully typed with [TypeScript][].
+
+## Compatibility
+
+This package is at least compatible with all maintained versions of Node.js.
+As of now, that is Node.js 12.20+, 14.14+, and 16.0+.
+It also works in Deno and modern browsers.
+
+## Security
+
+This package is safe.
+
+## Related
+
+*   [`wooorm/html-encodings`](https://github.com/wooorm/html-encodings)
+    — info on HTML character encodings
+
+## Contribute
+
+Yes please!
+See [How to Contribute to Open Source][contribute].
 
 ## License
 
@@ -71,12 +131,16 @@ There is no default export.
 
 [npm]: https://docs.npmjs.com/cli/install
 
+[skypack]: https://www.skypack.dev
+
 [license]: license
 
 [author]: https://wooorm.com
 
-[1]: https://developer.mozilla.org/en/docs/Web/HTML/Element/meta#attr-charset
+[esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
 
-[2]: https://encoding.spec.whatwg.org/#security-background
+[typescript]: https://www.typescriptlang.org
 
-[encodings]: https://github.com/wooorm/html-encodings
+[contribute]: https://opensource.guide/how-to-contribute/
+
+[spec]: https://encoding.spec.whatwg.org/#security-background
