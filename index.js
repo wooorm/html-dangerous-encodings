@@ -1,3 +1,8 @@
+/**
+ * List of dangerous HTML character encoding labels.
+ *
+ * @type {Array<string>}
+ */
 export const htmlDangerousEncodings = [
   'hz-gb-2312',
   'csiso2022kr',
