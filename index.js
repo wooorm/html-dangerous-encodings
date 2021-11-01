@@ -1,4 +1,4 @@
-export var htmlDangerousEncodings = [
+export const htmlDangerousEncodings = [
   'hz-gb-2312',
   'csiso2022kr',
   'csiso2022jp',
